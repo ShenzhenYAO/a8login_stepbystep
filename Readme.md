@@ -4,7 +4,7 @@ This part is to create the basic structure, and a home page (index.html) with on
 The tutorial of this part can be found at https://jasonwatmore.com/post/2019/04/24/angular-7-tutorial-part-2-create-base-project-structure-webpack-config. 
 
 1. Create package.json
-•	In vscode, and under the folder my8login, create a new file (by hitting the new file button) and name it ‘package.json’. The full contents of package.json can be found at ‘https://jasonwatmore.com/post/2019/06/10/angular-8-user-registration-and-login-example-tutorial#package-json’. 
+•	In vscode, and under the project root, create a new file (by hitting the new file button) and name it ‘package.json’. The full contents of package.json can be found at ‘https://jasonwatmore.com/post/2019/06/10/angular-8-user-registration-and-login-example-tutorial#package-json’. 
 •	In VSCode, and in the file of package.json, paste { "name": " a8login_sbs ",    "version": "1.0.0" }. 
 Question: do I have to sue the same name as the folder name (a8login_stepbystep)?As a test, I'll put a different name here
 
@@ -65,7 +65,83 @@ Action: do nothing, cannot see how it is harmful for now.
 •	The details of each compiler can be found at https://jasonwatmore.com/post/2019/04/24/angular-7-tutorial-part-2-create-base-project-structure-webpack-config.
 
 6. Create Webpack 4 Config
-•	In VSCode, under ‘mya8login’’, Create a file ‘webpack.config.js’.  In the file, paste the code from the Webpack 4 Config part of https://jasonwatmore.com/post/2019/06/10/angular-8-user-registration-and-login-example-tutorial#tsconfig-json
+•	In VSCode, under the project root folder, Create a file ‘webpack.config.js’.  In the file, paste the code from the Webpack 4 Config part of https://jasonwatmore.com/post/2019/06/10/angular-8-user-registration-and-login-example-tutorial#tsconfig-json
 •	Description on the code can be found at the corresponding section of https://jasonwatmore.com/post/2019/04/24/angular-7-tutorial-part-2-create-base-project-structure-webpack-config
 
+7. Create src, and app folder
+•	In VSCode, under the project root, create a folder ‘src’, within it, create a folder ‘app’.
+•	The structure of folders can be found in the section ‘Angular 8 Tutorial Project Structure’ in the web page https://jasonwatmore.com/post/2019/06/10/angular-8-user-registration-and-login-example-tutorial#tsconfig-json
+
+8. Create Angular App Component template
+•	In VSCode, and under the folder ‘app’, create a file ‘app.component.html’
+•	In this file, paste the code 
+<h1>Hello Angular 8!</h1>
+•	Note that the code in the following page is not suitable here. That code will be added in the future. (https://jasonwatmore.com/post/2019/06/10/angular-8-user-registration-and-login-example-tutorial#tsconfig-json)
+
+9. Create Angular App Component
+•	In VSCode, and under the folder ‘app’, create a file ‘app.component.ts’
+•	In this file, paste the code as specified
+•	Note that the code in the following page is not suitable here. That code will be added in the future. Same for  the following steps 10 and 11 (https://jasonwatmore.com/post/2019/06/10/angular-8-user-registration-and-login-example-tutorial#tsconfig-json)
+
+10. Create Angular App Module
+•	In VSCode, and under the folder ‘app’, create a file ‘app.module.ts’
+•	In this file, paste the code from the corresponding part from https://jasonwatmore.com/post/2019/04/24/angular-7-tutorial-part-2-create-base-project-structure-webpack-config
+
+11. Create Angular Polyfills File
+•	In VSCode, and under the folder ‘src’, create a file ‘polyfills.ts’
+•	In this file, paste the code from the corresponding part from https://jasonwatmore.com/post/2019/04/24/angular-7-tutorial-part-2-create-base-project-structure-webpack-config
+
+12. Create Angular Main (Bootstrap/Launch) File
+•	In VSCode, and under the folder ‘src’, create a file ‘main.ts’
+•	In this file, paste the code from the corresponding part from https://jasonwatmore.com/post/2019/06/10/angular-8-user-registration-and-login-example-tutorial#tsconfig-json
+
+13. Create Angular Main Index Html File
+•	In VSCode, and under the folder ‘src’, create a file ‘index.html’
+•	In this file, paste the code from the corresponding part from https://jasonwatmore.com/post/2019/06/10/angular-8-user-registration-and-login-example-tutorial#tsconfig-json
+
+14. Add start script to package.json
+•	In VSCode, and in package.json, paste the code from the corresponding lines in package.json from https://jasonwatmore.com/post/2019/06/10/angular-8-user-registration-and-login-example-tutorial#tsconfig-json 
+
+15. Start the application
+•	In node.js command window and under the project root, type npm start
+
+B. Add routing & multiple pages
+This part is to add ‘home, login, and register’ into the top banner of the page. 
+Tutorial of this part is available at https://jasonwatmore.com/post/2019/04/29/angular-7-tutorial-part-3-add-routing-multiple-pages
+1. Create Home Page Component & Template
+•	In VSCODe, and under app, create a folder ‘home’. Inside ‘home’, create a file ‘home.component.html’. 
+•	In this file, paste the code from the corresponding part from https://jasonwatmore.com/post/2019/04/29/angular-7-tutorial-part-3-add-routing-multiple-pages
+•	Inside ‘home’, create a file ‘home.component.ts. 
+•	In this file, paste the code from the corresponding part from https://jasonwatmore.com/post/2019/04/29/angular-7-tutorial-part-3-add-routing-multiple-pages
+•	Inside ‘home’, create a file ‘index.ts. 
+•	In this file, paste the code from the corresponding part from https://jasonwatmore.com/post/2019/04/29/angular-7-tutorial-part-3-add-routing-multiple-pages
+2. Login Page Component & Template
+•	In VSCODe, and under app, create a folder ‘login’. Inside ‘login’, create a file ‘login.component.html’. 
+•	In this file, paste the code from the corresponding part from https://jasonwatmore.com/post/2019/04/29/angular-7-tutorial-part-3-add-routing-multiple-pages
+•	Inside ‘login’, create a file ‘login.component.ts. 
+•	In this file, paste the code from the corresponding part from https://jasonwatmore.com/post/2019/04/29/angular-7-tutorial-part-3-add-routing-multiple-pages
+•	Inside ‘login’, create a file ‘index.ts. 
+•	In this file, paste the code from the corresponding part from https://jasonwatmore.com/post/2019/04/29/angular-7-tutorial-part-3-add-routing-multiple-pages
+3. Register Page Component & Template
+•	In VSCODe, and under app, create a folder ‘register’. Inside ‘register’, create a file ‘register.component.html’. 
+•	In this file, paste the code from the corresponding part from https://jasonwatmore.com/post/2019/04/29/angular-7-tutorial-part-3-add-routing-multiple-pages
+•	Inside ‘register’, create a file ‘register.component.ts. 
+•	In this file, paste the code from the corresponding part from https://jasonwatmore.com/post/2019/04/29/angular-7-tutorial-part-3-add-routing-multiple-pages
+•	Inside ‘register’, create a file ‘index.ts. 
+•	In this file, paste the code from the corresponding part from https://jasonwatmore.com/post/2019/04/29/angular-7-tutorial-part-3-add-routing-multiple-pages
+4. Add Components to App Module
+•	In /src/app/app.module.ts, make changes according to the corresponding part from https://jasonwatmore.com/post/2019/04/29/angular-7-tutorial-part-3-add-routing-multiple-pages. Basically, it is to add the specification for home, login, and register, as have been done in step 1 to 3.
+5. Configure App Routing Module
+•	Question: what is routing…
+•	In VSCODe, and under app, create a file ‘app.routing.ts’
+•	In this file, paste the code from the corresponding part from https://jasonwatmore.com/post/2019/04/29/angular-7-tutorial-part-3-add-routing-multiple-pages
+6. Add App Routing Module to App Module
+•	In /src/app/app.module.ts, make changes according to the corresponding part from https://jasonwatmore.com/post/2019/04/29/angular-7-tutorial-part-3-add-routing-multiple-pages. Basically, it is to add the specification for home, login, and register, as have been done in step 5.
+7. Add Router Outlet and Navigation to App Component
+•	In /src/app/app/component.html, replace the <h1>Hello Angular 8!</h1> message with the corresponding part from https://jasonwatmore.com/post/2019/04/29/angular-7-tutorial-part-3-add-routing-multiple-pages
+8. Update Webpack Dev Server Config
+•	Add code to webpack.config.js to prevent 404 errors corresponding part from https://jasonwatmore.com/post/2019/04/29/angular-7-tutorial-part-3-add-routing-multiple-pages
+•	Note that this part is different from the above source, the correct code can be found in https://jasonwatmore.com/post/2019/06/10/angular-8-user-registration-and-login-example-tutorial#tsconfig-json
+
+9. In node.js command window, under the folder C:\Users\Z70\Angular 8 projects\mya8login, type nmp start to launch the application.
 

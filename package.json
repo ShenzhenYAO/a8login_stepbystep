@@ -2,6 +2,7 @@
     "name": "a8login_sbs",
     "version": "1.0.0",
     "mycomment": "Q: does the name has to be the same as the folder name? I put a diff name here",
+
     "dependencies": {
         "mycomment": "This part installs the dependencies (i.e., the angular modules for run the web site)",
         "@angular/common": "^8.2.14",
@@ -14,6 +15,7 @@
         "core-js": "^3.6.4",
         "rxjs": "^6.5.4"
     },
+
     "devDependencies": {
         "@types/node": "^12.12.25",
         "angular2-template-loader": "^0.6.2",
@@ -29,5 +31,10 @@
         "webpack-cli": "^3.3.10",
         "webpack-dev-server": "^3.10.1",
         "zone.js": "^0.9.1"
+    },
+
+    "scripts": {
+        "mycomment": "The following is to start the command after npm start. The purpose is to launch the index page in a browser",
+        "start": "webpack-dev-server --mode development --open"
     }
 }
