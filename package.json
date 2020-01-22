@@ -1,0 +1,33 @@
+{
+    "name": "a8login_sbs",
+    "version": "1.0.0",
+    "mycomment": "Q: does the name has to be the same as the folder name? I put a diff name here",
+    "dependencies": {
+        "mycomment": "This part installs the dependencies (i.e., the angular modules for run the web site)",
+        "@angular/common": "^8.2.14",
+        "@angular/compiler": "^8.2.14",
+        "@angular/core": "^8.2.14",
+        "@angular/forms": "^8.2.14",
+        "@angular/platform-browser": "^8.2.14",
+        "@angular/platform-browser-dynamic": "^8.2.14",
+        "@angular/router": "^8.2.14",
+        "core-js": "^3.6.4",
+        "rxjs": "^6.5.4"
+    },
+    "devDependencies": {
+        "@types/node": "^12.12.25",
+        "angular2-template-loader": "^0.6.2",
+        "css-loader": "^3.4.2",
+        "html-loader": "^0.5.5",
+        "html-webpack-plugin": "^3.2.0",
+        "less": "^3.10.3",
+        "less-loader": "^5.0.0",
+        "raw-loader": "^3.1.0",
+        "ts-loader": "^6.2.1",
+        "typescript": "^3.7.5",
+        "webpack": "^4.41.5",
+        "webpack-cli": "^3.3.10",
+        "webpack-dev-server": "^3.10.1",
+        "zone.js": "^0.9.1"
+    }
+}
