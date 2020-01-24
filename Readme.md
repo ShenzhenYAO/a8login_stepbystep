@@ -145,3 +145,145 @@ Tutorial of this part is available at https://jasonwatmore.com/post/2019/04/29/a
 
 9. In node.js command window, under the folder C:\Users\Z70\Angular 8 projects\mya8login_stepbystep, type nmp start to launch the application.
 
+****************************************************
+C. Login Form, Authentication Service & Route Guard
+****************************************************
+
+This part is to create the login form. With the link to the register form (the register form is not developed yet). 
+The tutorial of this part can be found at https://jasonwatmore.com/post/2019/05/17/angular-7-tutorial-part-4-login-form-authentication-service-route-guard. 
+
+1. Create Fake Backend
+1.1 Create Helpers Folder
+•	In VSCode, and under app, create a folder ‘_helpers’.
+1.2 Create Fake Backend Http Interceptor
+•	In _helpers, create a file ‘fake-backend.ts’.
+•	In this file, paste the code from the corresponding part from https://jasonwatmore.com/post/2019/05/17/angular-7-tutorial-part-4-login-form-authentication-service-route-guard
+1.3 Create Barrel File in Helpers Folder
+•	In _helpers, create a file ‘index.ts’.
+•	In this file, paste the code from the corresponding part from https://jasonwatmore.com/post/2019/05/17/angular-7-tutorial-part-4-login-form-authentication-service-route-guard
+1.4 Add Fake Backend to App Module
+•	In /src/app/app.module.ts, make changes according to the corresponding part from https://jasonwatmore.com/post/2019/05/17/angular-7-tutorial-part-4-login-form-authentication-service-route-guard
+2. Create Global Config Object
+2.1
+•	Add code to webpack.config.js from the corresponding part from https://jasonwatmore.com/post/2019/04/29/angular-7-tutorial-part-3-add-routing-multiple-pages. 
+•	Note that this part is different from the above source, the correct code can be found in https://jasonwatmore.com/post/2019/06/10/angular-8-user-registration-and-login-example-tutorial#tsconfig-json
+2.2 Create Custom Typings File
+•	In _/src, create a file ‘typings.d.ts’.
+•	In this file, paste the code from the corresponding part from https://jasonwatmore.com/post/2019/05/17/angular-7-tutorial-part-4-login-form-authentication-service-route-guard
+3. Create Authentication Service
+3.1 Create Services Folder
+•	In VSCode, and under app, create a folder ‘_services’. 
+3.2 Create Authentication Service
+•	In _services, create a file ‘authentication.service.ts’.
+•	In this file, paste the code from the corresponding part from https://jasonwatmore.com/post/2019/05/17/angular-7-tutorial-part-4-login-form-authentication-service-route-guard
+3.3 Create Barrel File in Services Folder
+•	In _ services, create a file ‘index.ts’.
+•	In this file, paste the code from the corresponding part from https://jasonwatmore.com/post/2019/05/17/angular-7-tutorial-part-4-login-form-authentication-service-route-guard
+4. Import ReactiveFormsModule and HttpClientModule into App Module
+•	In /src/app/app.module.ts, make changes according to the corresponding part from https://jasonwatmore.com/post/2019/05/17/angular-7-tutorial-part-4-login-form-authentication-service-route-guard
+5. Add Form Logic to Login Component
+•	In /src/app/login/login.component.ts, make changes according to the corresponding part from https://jasonwatmore.com/post/2019/05/17/angular-7-tutorial-part-4-login-form-authentication-service-route-guard
+6. Add Form HTML to Login Component Template
+•	In /src/app/login/login.component.html, make changes according to the corresponding part from https://jasonwatmore.com/post/2019/05/17/angular-7-tutorial-part-4-login-form-authentication-service-route-guard
+7. Add Logout and Show/Hide Nav to App Component
+7.1 Add Logic to App Component
+•	In /src/app/app.component.ts, make changes according to the corresponding part from https://jasonwatmore.com/post/2019/05/17/angular-7-tutorial-part-4-login-form-authentication-service-route-guard
+7.2 Update Nav in App Component Template
+•	In /src/app/app.component.html, make changes according to the corresponding part from https://jasonwatmore.com/post/2019/05/17/angular-7-tutorial-part-4-login-form-authentication-service-route-guard
+8. Create Route Guard
+8.1 Create Auth Guard
+•	In _helpers, create a file ‘auth.guard.ts’.
+•	In this file, paste the code from the corresponding part from https://jasonwatmore.com/post/2019/05/17/angular-7-tutorial-part-4-login-form-authentication-service-route-guard
+8.2 Add Auth Guard to Helpers Barrel File
+•	In /src/app/_helpers/index.ts, make changes according to the corresponding part from https://jasonwatmore.com/post/2019/05/17/angular-7-tutorial-part-4-login-form-authentication-service-route-guard
+8.3 Add Auth Guard to Home Page Route
+•	In /src/app/app.routing.ts, make changes according to the corresponding part from https://jasonwatmore.com/post/2019/05/17/angular-7-tutorial-part-4-login-form-authentication-service-route-guard
+9. Create JWT Interceptor
+9.1 Create Angular 8 JWT Interceptor (Note that the tutorial said Create Angular 7 JWT Interceptor)
+•	In _helpers, create a file ‘jwt.interceptor.ts’.
+•	In this file, paste the code from the corresponding part from https://jasonwatmore.com/post/2019/05/17/angular-7-tutorial-part-4-login-form-authentication-service-route-guard
+9.2 Add JWT Interceptor to Barrel File
+•	In /src/app/_helpers/index.ts, make changes according to the corresponding part from https://jasonwatmore.com/post/2019/05/17/angular-7-tutorial-part-4-login-form-authentication-service-route-guard
+10. Create Error Interceptor
+10.1 Create Angular 8 Error Interceptor
+•	In _helpers, create a file ‘error.interceptor.ts’.
+•	In this file, paste the code from the corresponding part from https://jasonwatmore.com/post/2019/05/17/angular-7-tutorial-part-4-login-form-authentication-service-route-guard
+10.2 Add Error Interceptor to Barrel File
+•	In /src/app/_helpers/index.ts, make changes according to the corresponding part from https://jasonwatmore.com/post/2019/05/17/angular-7-tutorial-part-4-login-form-authentication-service-route-guard
+11. Add HTTP Interceptors to App Module
+•	In /src/app/app.module.ts, make changes according to the corresponding part from https://jasonwatmore.com/post/2019/05/17/angular-7-tutorial-part-4-login-form-authentication-service-route-guard
+12. In node.js command window, under the folder C:\Users\Z70\Angular 8 projects\mya8login, type nmp start to launch the application.
+
+***********************************
+D. Registration Form & User Service
+***********************************
+This part is to make the registration form
+The tutorial of this part can be found at https://jasonwatmore.com/post/2019/05/22/angular-7-tutorial-part-5-registration-form-user-service
+1. Add Register Route to Fake Backend
+1.1 Update Fake Backend
+•	In /src/app/_helpers/fake-backend.ts, make changes according to the corresponding part from https://jasonwatmore.com/post/2019/05/22/angular-7-tutorial-part-5-registration-form-user-service
+2. Create User Service
+2.1 Create User Service
+•	In _ services, create a file ‘user.service.ts’.
+•	In this file, paste the code from the corresponding part from https://jasonwatmore.com/post/2019/05/22/angular-7-tutorial-part-5-registration-form-user-service
+2.2 Add User Service to Services Barrel File
+•	In /src/app/_services/index.ts, make changes according to the corresponding part from https://jasonwatmore.com/post/2019/05/22/angular-7-tutorial-part-5-registration-form-user-service
+3. Add Form Logic to Register Component
+3.1 Update Register Component
+•	In /src/app/register/register.component.ts, make changes according to the corresponding part from https://jasonwatmore.com/post/2019/05/22/angular-7-tutorial-part-5-registration-form-user-service
+4. Add Form HTML to Register Component Template
+4.1 Update Register Component Template
+•	In /src/app/register/register.component.html, make changes according to the corresponding part from https://jasonwatmore.com/post/2019/05/22/angular-7-tutorial-part-5-registration-form-user-service
+5. Add Success Alert To Login Component
+5.1 Update Login Component
+•	In /src/app/login/login.component.ts, make changes according to the corresponding part from https://jasonwatmore.com/post/2019/05/22/angular-7-tutorial-part-5-registration-form-user-service
+5.2 Update Login Component Template
+•	In /src/app/login/login.component.html, make changes according to the corresponding part from https://jasonwatmore.com/post/2019/05/22/angular-7-tutorial-part-5-registration-form-user-service
+6. In node.js command window, under the folder C:\Users\Z70\Angular 8 projects\mya8login, type nmp start to launch the application.
+
+***********************************
+E. Home Page & Alert Component
+***********************************
+This part is to complete the homepage. After log  in, show the existing users, and allow to delete them.
+The tutorial of this part can be found at https://jasonwatmore.com/post/2019/05/31/angular-7-tutorial-part-6-home-page-alert-component.
+1. Add "Get Users" and "Delete User" Routes to Fake Backend
+1.1 Update Fake Backend
+•	In /src/app/_helpers/fake-backend.ts, make changes according to the corresponding part from https://jasonwatmore.com/post/2019/05/31/angular-7-tutorial-part-6-home-page-alert-component. 
+2. Add Logic to Home Component
+2.1 Update Home Component
+•	In /src/app/home/home.component.ts, make changes according to the corresponding part from https://jasonwatmore.com/post/2019/05/31/angular-7-tutorial-part-6-home-page-alert-component.
+3. Add HTML to Home Component Template
+•	In /src/app/home/home.component.html, make changes according to the corresponding part from https://jasonwatmore.com/post/2019/05/31/angular-7-tutorial-part-6-home-page-alert-component.
+4. Create Alert Service
+4.1 Create Alert Service
+•	In _services, create a file ‘alert.service.ts.ts’.
+•	In this file, paste the code from the corresponding part from https://jasonwatmore.com/post/2019/05/31/angular-7-tutorial-part-6-home-page-alert-component.
+4.2 Add Alert Service to Services Barrel File
+•	In /src/app/_services/index.ts, make changes according to the corresponding part from https://jasonwatmore.com/post/2019/05/31/angular-7-tutorial-part-6-home-page-alert-component.
+5. Create Alert Component & Template
+5.1 Create Components Folder
+•	In /src/app, create a folder named _components.
+5.2 Create Alert Component
+•	In _components, create a file ‘alert.component.ts’.
+•	In this file, paste the code from the corresponding part from https://jasonwatmore.com/post/2019/05/31/angular-7-tutorial-part-6-home-page-alert-component.
+5.3 Create Alert Component Template
+•	In _components, create a file ‘alert.component.html’.
+•	In this file, paste the code from the corresponding part from https://jasonwatmore.com/post/2019/05/31/angular-7-tutorial-part-6-home-page-alert-component.
+5.4 Create Barrel File in Components Folder
+•	In _components, create a file ‘index.ts’.
+•	In this file, paste the code from the corresponding part from https://jasonwatmore.com/post/2019/05/31/angular-7-tutorial-part-6-home-page-alert-component.
+5.5 Add Alert Component to App Module
+•	In /src/app/app.module.ts, make changes according to the corresponding part from https://jasonwatmore.com/post/2019/05/31/angular-7-tutorial-part-6-home-page-alert-component.
+5.6 Add Alert Component to App Component Template
+•	In /src/app/app.component.html, make changes according to the corresponding part from https://jasonwatmore.com/post/2019/05/31/angular-7-tutorial-part-6-home-page-alert-component.
+6. Refactor Login Component to use Alert Service
+6.1 Refactor Login Component Logic
+•	In /src/app/login/login.component.ts, make changes according to the corresponding part from https://jasonwatmore.com/post/2019/05/31/angular-7-tutorial-part-6-home-page-alert-component.
+6.2 Remove Alert HTML from Login Component Template
+•	In /src/app/login/login.component.html, make changes according to the corresponding part from https://jasonwatmore.com/post/2019/05/31/angular-7-tutorial-part-6-home-page-alert-component.
+7. Refactor Register Component to use Alert Service
+7.1 Refactor Register Component Logic
+•	In /src/app/register/register.component.ts, make changes according to the corresponding part from https://jasonwatmore.com/post/2019/05/31/angular-7-tutorial-part-6-home-page-alert-component.
+7.2 Remove Alert HTML from Register Component Template
+•	In /src/app/register/register.component.html, make changes according to the corresponding part from https://jasonwatmore.com/post/2019/05/31/angular-7-tutorial-part-6-home-page-alert-component.
+8. In node.js command window, under the folder C:\Users\Z70\Angular 8 projects\mya8login, type nmp start to launch the application.
