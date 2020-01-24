@@ -45,7 +45,7 @@ Action: do nothing, cannot see how it is harmful for now.
 
 
 4. Reinstall the dependencies. 
-•	Now that the dependencies in 2 and 3 (for Angular 8, and for development) are specified in package.json. One can always type ‘nmp install’ in node.js command (under the folder ‘mya8login’’) to re-install all the packages. 
+•	Now that the dependencies in 2 and 3 (for Angular 8, and for development) are specified in package.json. One can always type ‘nmp install’ in node.js command (under the folder ‘mya8login_stepbystep’’) to re-install all the packages. 
 
 5. Create tsconfig.json (https://jasonwatmore.com/post/2019/06/10/angular-8-user-registration-and-login-example-tutorial#tsconfig-json)
 •	In VSCode, under ‘mya8login’’, Create a file ‘tsconfig.json’.  In the file, paste:
@@ -143,5 +143,5 @@ Tutorial of this part is available at https://jasonwatmore.com/post/2019/04/29/a
 •	Add code to webpack.config.js to prevent 404 errors corresponding part from https://jasonwatmore.com/post/2019/04/29/angular-7-tutorial-part-3-add-routing-multiple-pages
 •	Note that this part is different from the above source, the correct code can be found in https://jasonwatmore.com/post/2019/06/10/angular-8-user-registration-and-login-example-tutorial#tsconfig-json
 
-9. In node.js command window, under the folder C:\Users\Z70\Angular 8 projects\mya8login, type nmp start to launch the application.
+9. In node.js command window, under the folder C:\Users\Z70\Angular 8 projects\mya8login_stepbystep, type nmp start to launch the application.
 

@@ -1,5 +1,6 @@
 // this file is to 1) load build-in modules (Component)
 // 2) specify the web components to obtain (in which html file, within what tag) by decorating Component
+// best explained here: https://www.youtube.com/watch?v=16rQyEQtpyQ
 
 //import the module 'Component' from angular's core modules 9under the folder /node_modules/@angular/core
 import { Component } from '@angular/core';
